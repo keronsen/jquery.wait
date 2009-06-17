@@ -3,11 +3,16 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Example code for jquery.wait plugin</title>
+	
+	<style type="text/css">
+		body { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; }
+		#message { border: 1px solid #CCC; padding: 40px; width: 200px; height: 100px; position: absolute; top: 100px; left: 100px; }
+	</style>
 </head>
 
 <body>
 
-	<div class="message">
+	<div id="message">
 		<h1>Hello</h1>
 		<p>World!</p>
 	</div>
@@ -15,7 +20,7 @@
 	<script type="text/javascript" src="lib/jquery-1.3.2.js"></script>
 	<script type="text/javascript" src="jquery.wait.js"></script>
 	<script type="text/javascript">
-		var message = $(".message");
+		var message = $("#message");
 		message.hide().fadeIn().wait(3000).fadeOut("slow");
 	</script>
 

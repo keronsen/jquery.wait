@@ -1,0 +1,9 @@
+
+
+h1. Usage example
+
+Show a message for 4 seconds
+
+<code>
+  jQuery(".message").fadeIn().wait(4000).fadeOut();
+</code>
